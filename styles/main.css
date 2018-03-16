@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+@keyframes movimentonaranja {
+    from{
+        transform: rotate(0deg)  translate(-100px) rotate(0deg); 
+    }
+    to{
+        transform: rotate(-360deg) translate(-100px) rotate(360deg)
+    }
+}
+@keyframes m2 {
+    from{
+        transform: rotate(0deg)  translate(-105px) rotate(0deg); 
+    }
+    to{
+        transform: rotate(-360deg) translate(-105px) rotate(360deg)
+    }
+}
+@keyframes m3 {
+    from{
+        transform: rotate(0deg)  translate(-110px) rotate(0deg); 
+    }
+    to{
+        transform: rotate(-360deg) translate(-110px) rotate(360deg)
+    }
+}
+@keyframes m3 {
+    from{
+        transform: rotate(0deg)  translate(-115px) rotate(0deg); 
+    }
+    to{
+        transform: rotate(-360deg) translate(-115px) rotate(360deg)
+    }
+}
+/* Maquetacion menu */
+.containermenu{
+    background-color: black;
+}
+h1{
+    line-height: 75px;
+    text-align: center;
+}
+nav ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 361px;
+    height: 52px;
+    list-style: none;
+    text-align: center;
+}
+nav ul li{
+    text-align: center;
+    line-height: 47px;
+    display: inline-block;
+    transition-property: background-color,border-bottom,box-sizing,border-radius;
+    transition-duration: 600ms;
+    transition-delay: 0s,0s,0s,200ms;
+}
+nav ul li:hover{
+    border-radius: 10px;
+    background-color: #57504F;
+    border-bottom: solid 5px #FF0000;
+    box-sizing: border-box;
+}
+nav ul li a{
+    color: white;
+    font-family: 'Rozha One', serif;
+    padding: 15px 21px;
+    text-decoration: none;
+}
+.active{
+    background-color: #57504F;
+    border-bottom: solid 5px #FF0000;
+    box-sizing: border-box;
+}
+/* posiciones */
+div{
+    position: relative;
+}
+div,div nav,div article{
+    position: absolute;
+}
+.cpindex nav:first-child{
+    top: 0;
+    left: 0;
+}
+.cpindex nav:nth-child(2){
+    top: 0;
+    right: 0;
+}
+.cpindex nav:nth-child(3){
+    left: 0;
+    bottom: 0;
+}
+.cpindex nav:nth-child(4){
+    bottom: 0;
+    right: 0;
+}
+div,.cpindex article,.cpagina2:hover nav:nth-child(1),.cpagina1 nav{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.cpagina2 nav{
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+section{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+section{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+section{
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/* border radius */
+.cpindex:hover  nav:nth-child(1),.cpindex:hover  nav:nth-child(2),.cpindex:hover  nav:nth-child(3),.cpindex:hover  nav:nth-child(4),.cpagina1:hover,.cpagina1:hover nav{
+    border-radius: 50%;
+}
+section{
+    border-radius: 30%;
+}
+/* pindex */
+.cpindex{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    transition-property: background-color,width,height;
+    transition-duration: 1s;
+    transition-delay: 0s,1s,2s;
+    overflow: hidden;
+}
+.cpindex:hover{
+    width: 400px;
+    height: 350px;
+    background-color: gray;
+}
+.cpindex nav{
+    width: 80px;
+    height: 80px;
+    background-color: #57504f;
+}
+.cpindex  nav:nth-child(1){
+    transition-property: margin-top,background-color,border-radius;
+    transition-duration:2s;
+    transition-delay: 3s,3.5s,3.5s;
+}
+.cpindex  nav:nth-child(2){
+    transition-property: margin-right,background-color,border-radius;
+    transition-duration:2s;
+    transition-delay: 3.6s,5s,5s;
+}
+.cpindex  nav:nth-child(3){
+    transition-property: margin-left,background-color,border-radius;
+    transition-duration:2s;
+    transition-delay: 3.2s,4s,4s;
+}
+.cpindex  nav:nth-child(4){
+    transition-property: margin-bottom,background-color,border-radius;
+    transition-duration:2s;
+    transition-delay: 3.4s,4.5s,4.5s;
+}
+.cpindex:hover nav:nth-child(1),.cpindex:hover nav:nth-child(2),.cpindex:hover nav:nth-child(3),.cpindex:hover nav:nth-child(4),.cpindex:hover article{
+background-color: whitesmoke;
+}
+.cpindex:hover nav:nth-child(1){
+    margin-top:  270px;
+}
+.cpindex:hover nav:nth-child(2){
+    margin-right:  320px;
+}
+.cpindex:hover nav:nth-child(3){
+    margin-left:  320px;
+}
+.cpindex:hover nav:nth-child(4){
+    margin-bottom: 270px;
+}
+.cpindex  article{
+    width: 2px;
+    height: 2px;
+    background-color: #57504F;
+}
+.cpindex  article{
+    transition-property: width,height,background-color;
+    transition-duration:2s;
+    transition-delay: 4.5s,4.5s,4s;
+}
+.cpindex:hover article{
+    width: 80px;
+    height: 80px;
+}
+/* pagina 1 */
+.cpagina1{
+    width:400px;
+    height:400px;
+    background-color: #3800AA;
+    transition-property: width,height,border-radius;
+    transition: 2s;
+    transition-delay: 0s,.5s;
+}
+.cpagina1 nav:nth-child(4) article{
+    width: 0px;
+    height: 0px;
+}
+.cpagina1:hover{
+    width: 500px;
+    height: 500px;
+}
+.cpagina1 nav:nth-child(1){
+    transition-property: background-color,width,height,border-radius,border;
+    transition-duration: 1s;
+    transition-delay: 2s,2s,3s,3.5s,3.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.cpagina1:hover nav:nth-child(1){
+    animation-name: movimentonaranja;
+    width: 300px;
+    height: 300px;
+    display:inline-block;
+    background-color: #AA001F;
+    border: solid 4px gray;
+}
+.cpagina1 nav:nth-child(2){
+    transition-property: background-color,width,height,border-radius,border;
+    transition-duration: 1s;
+    transition-delay: 4s,4s,5s,5.5s,5.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0.15s;
+    animation-iteration-count: infinite;
+}
+.cpagina1:hover nav:nth-child(2){
+    animation-name: m2;
+    width: 290px;
+    height: 290px;
+    display: inline-block;
+    background-color: #DA0028;
+    border: solid 4px gray;
+}
+.cpagina1 nav:nth-child(3){
+    transition-property: background-color,width,height,border-radius,border;
+    transition-duration: 1s;
+    transition-delay: 6s,6s,7s,7.5s,7.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: .25s;
+    animation-iteration-count: infinite;
+}
+.cpagina1:hover nav:nth-child(3){
+    animation-name: m3;
+    width: 280px;
+    height: 280px;
+    display: inline-block;
+    background-color: #FE002F;
+    border: solid 4px gray;
+}
+.cpagina1 nav:nth-child(4){
+    transition-property: background-color,width,height,border-radius,border;
+    transition-duration: 1s;
+    transition-delay: 8s,8s,9s,10s,10.5s,10.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: .33s;
+    animation-iteration-count: infinite;
+}
+.cpagina1:hover nav:nth-child(4){
+    animation-name: m3;
+    width: 270px;
+    height: 270px;
+    display: inline-block;
+    background-color: #FF486A;
+    border: solid 4px gray;
+}
+.cpagina1:hover nav:nth-child(4) article:first-child{
+
+}
+/* pagina 2 */
+.cpagina2{
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    transition: 2s;
+}
+.cpagina2 nav{
+    width:1px;
+    height: 1px;
+    background-color: dodgerblue;
+}
+.cpagina2:hover{
+    width: 800px;
+    height: 400px;
+}
+.cpagina2:hover nav{
+    width:5px;
+    height: 5px;
+    background-color: dodgerblue;
+}
+.cpagina2 nav:nth-child(1){
+    transition-property: background-color,width,height;
+    transition-duration: 2s;
+    transition-delay: 2s,3s,3s;
+}
+.cpagina2:hover nav:nth-child(1){
+    width: 100px;
+    height: 300px;
+    background-color: white;
+}
+.cpagina2 nav:nth-child(2){
+    transition-property: background-color,width,height,margin-top;
+    transition-duration: 2s;
+    transition-delay: 2s,3s,3s,4s;
+}
+.cpagina2:hover nav:nth-child(2),.cpagina2:hover nav:nth-child(3){
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    margin-right: 350px;
+}
+.cpagina2:hover nav:nth-child(2){
+    margin-top: 300px;
+}
+.cpagina2 nav:nth-child(3){
+    transition-property: background-color,width,height,margin-right,margin-top;
+    transition-duration: 2s;
+    transition-delay: 4s,5s,5s,6s,6s;
+}
+.cpagina2:hover nav:nth-child(3){
+    margin-top: 180px;
+}
+.cpagina2:hover nav:nth-child(4),.cpagina2:hover nav:nth-child(5),.cpagina2:hover nav:nth-child(6),.cpagina2:hover nav:nth-child(7){
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.cpagina2 nav:nth-child(4),.cpagina2 nav:nth-child(5),.cpagina2 nav:nth-child(6),.cpagina2 nav:nth-child(7){
+    transition-property: background-color,width,height,margin-right,margin-top;
+    transition-duration: 2s;
+    transition-delay: 4s,5s,5s,6s,6s;
+}
+.cpagina2:hover nav:nth-child(4){
+    margin-top: 90px;
+    margin-right: 450px;
+}
+.cpagina2:hover nav:nth-child(5){
+    margin-top: 210px;
+    margin-right: 500px;
+}
+.cpagina2:hover nav:nth-child(6){
+    margin-top: 260px;
+    margin-right: 300px;
+}
+.cpagina2:hover nav:nth-child(7){
+    margin-top: 210px;
+    margin-right: 250px;
+}
+.cpagina2 nav:nth-child(8){
+    transition-property: background-color,width,height,margin-right,margin-top;
+    transition-duration: 2s;
+    transition-delay: 6s,7s,7s,8s,8s;
+}
+.cpagina2:hover nav:nth-child(8){
+    margin-top: 50px;
+    margin-right: 350px; 
+    width: 50px;
+    height: 100px;
+    background-color: brown;
+}
+.cpagina2 nav:nth-child(9){
+    transition-property: background-color,width,height,margin-right,margin-top,border-radius;
+    transition-duration: 2s;
+    transition-delay: 6s,7s,7s,8s,8s,9s;
+}
+.cpagina2:hover nav:nth-child(9){
+    margin-top: 70px;
+    margin-right: 420px; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+.cpagina2 nav:nth-child(10){
+    transition-property: background-color,width,height,margin-right,margin-top,border-radius;
+    transition-duration: 2s;
+    transition-delay: 6s,7s,7s,8s,8s,9s;
+}
+.cpagina2:hover nav:nth-child(10){
+    margin-top: 80px;
+    margin-right: 500px; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
